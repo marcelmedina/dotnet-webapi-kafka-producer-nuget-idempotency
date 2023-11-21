@@ -1,0 +1,16 @@
+@producer_HostAddress = http://localhost:5265
+
+POST {{producer_HostAddress}}/sender/
+Accept: application/json
+
+{
+    "id": "1",
+    "description": "MILK",
+    "status": "PENDING",
+    "date": "2023-11-22T00:00:00.000Z",
+    "currency": "NZD",
+    "amount": 4.50,
+    "customerId": "1"
+}
+
+###
